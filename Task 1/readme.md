@@ -37,14 +37,10 @@ The SQL file includes queries for:
 - Cumulative spending over time per customer.  
 - Highest revenue product in each category (using `RANK()`).  
 
-### Step 4: Deliverables
-- 📂 `ecommerce_db_project.sql` → Contains schema, inserts, and all queries.  
-- ✍️ Short write-up included in this repository.  
-
 ---
 
 ## 🛠️ How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/ecommerce-db-analytics.git
-   cd ecommerce-db-analytics
+   git clone git clone https://github.com/MuhammadTalha-Ai/Buildables-Fellowship
+   cd Task 1
