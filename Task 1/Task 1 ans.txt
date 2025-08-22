@@ -1,0 +1,3 @@
+Through this project, I discovered how SQL constraints, joins, and analytic functions can be intertwined to provide answers for real business questions. Utilizing CHECK, UNIQUE, and FOREIGN KEY constraints allowed for data integrity to be enforced, while window functions ROW_NUMBER(), RANK(), and SUM() OVER() provided effective means of examining customer spending patterns.
+
+The most difficult aspect was crafting queries that involved ranking and cumulative aggregations. Crafting Common Table Expressions (CTEs) and using window functions required special attention so as to properly group and order them. Nonetheless, this exercise reinforced my knowledge of advanced analytics in SQL as well as how indexing enhances performance for often occurring joins and lookups.
