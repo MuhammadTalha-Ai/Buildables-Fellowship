@@ -31,7 +31,7 @@ Changes are detected using a **row-level hash (MD5)** across attributes.
 ---
 
 ## Wirte Up
-![Task3_wirteup](Task3/Task%203/Task3_wirteup.md) 
+![Task3_wirteup](Task3_wirteup.md) 
 
 ---
 
