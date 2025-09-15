@@ -14,8 +14,6 @@ When attributes change, instead of overwriting the row, we:
 Changes are detected using a **row-level hash (MD5)** across attributes.
 
 ---
-## Wirte
-(./Task3_wirteup.md)
 
 ## 📊 Schema Design
 
@@ -28,7 +26,12 @@ Changes are detected using a **row-level hash (MD5)** across attributes.
 
 **Staging Table (stg_ps5_games):**
 - Latest snapshot of incoming data  
-- Same attributes as dimension table (without SCD columns)  
+- Same attributes as dimension table (without SCD columns)
+
+---
+
+## Wirte
+(https://github.com/MuhammadTalha-Ai/Buildables-Fellowship/blob/Task3/Task%203/Task3_wirteup.md)  
 
 ---
 
