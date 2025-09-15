@@ -14,6 +14,8 @@ When attributes change, instead of overwriting the row, we:
 Changes are detected using a **row-level hash (MD5)** across attributes.
 
 ---
+## Wirte
+(./Task3_wirteup.md)
 
 ## 📊 Schema Design
 
@@ -40,9 +42,3 @@ flowchart LR
     C --> D[Unchanged → Do Nothing]
     C --> E[Changed → Expire Old Row<br>+ Insert New Row]
     C --> F[New Game → Insert New Row]
-
----
-
-## 📊 Wirte Up
-(./Task3_wirteup.md)
-
