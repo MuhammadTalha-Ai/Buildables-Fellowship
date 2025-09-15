@@ -30,11 +30,6 @@ Changes are detected using a **row-level hash (MD5)** across attributes.
 
 ---
 
-## 📖 Write Up
-See the full [Write Up](./Task3_writeup.md)
-
----
-
 ## 🔄 Flow Diagram (SCD-2 Logic)
 
 ```mermaid
@@ -45,3 +40,14 @@ flowchart LR
     C --> D[Unchanged → Do Nothing]
     C --> E[Changed → Expire Old Row<br>+ Insert New Row]
     C --> F[New Game → Insert New Row]
+```
+
+---
+
+## 📖 Write Up
+See the full [Write Up](./Task3_writeup.md)
+
+---
+
+## 📖 SCD-2
+See the full [SCD-2](./SCD-2.md)
