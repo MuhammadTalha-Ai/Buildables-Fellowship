@@ -1,21 +1,21 @@
-#Different Types of Slowly Changing Dimensions (SCD)
+# Different Types of Slowly Changing Dimensions (SCD)
 
-##SCD Type 0 (Retain Original Data)
+## SCD Type 0 (Retain Original Data)
 
 Never updates the record, keeps original values.
 Useful for immutable attributes like date of birth.
 
-##SCD Type 1 (Overwrite)
+## SCD Type 1 (Overwrite)
 
 Overwrites old data with new values.
 Useful for non-historical attributes like spelling corrections.
 
-##SCD Type 2 (History Tracking)
+## SCD Type 2 (History Tracking)
 
 Maintains full history by closing old records and inserting new ones.
 Useful for attributes where history is important (price changes, job role, subscription status).
 
-##SCD Type 3 (Limited History with Previous Column)
+## SCD Type 3 (Limited History with Previous Column)
 
 Adds an extra column for "previous value".
 Useful when only one level of history is needed (e.g., current and previous address).
