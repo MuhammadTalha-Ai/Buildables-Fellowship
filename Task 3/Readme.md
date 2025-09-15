@@ -15,6 +15,19 @@ Changes are detected using a **row-level hash (MD5)** across attributes.
 
 ---
 
+## 🗂️ SCD-2 Logic in SQL (Simplified)
+
+### Expire old records when row_hash differs:
+```sql
+UPDATE dim_ps5_games d
+SET end_date = NOW(), is_active = FALSE
+FROM stg_ps5_games s
+WHERE d.game_id = s.game_id
+  AND d.is_active = TRUE
+  AND d.row_hash <> s.row_hash;
+
+---
+
 ## 📊 Schema Design
 
 **Dimension Table (dim_ps5_games):**
