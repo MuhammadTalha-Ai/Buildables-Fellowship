@@ -6,25 +6,12 @@ The example tracks changes in **PS5 Games attributes** such as price, genre, dev
 ---
 
 ## 🚀 Scenario
-We maintain a dimension table of PS5 games.  
+We maintain a **dimension table** of PS5 games.  
 When attributes change, instead of overwriting the row, we:
 - Mark the old record as **inactive** (`end_date`, `is_active = FALSE`)  
-- Insert a **new version** with updated values and new surrogate key  
+- Insert a **new version** with updated values and a new surrogate key  
 
 Changes are detected using a **row-level hash (MD5)** across attributes.
-
----
-
-## 🗂️ SCD-2 Logic in SQL (Simplified)
-
-### Expire old records when row_hash differs:
-```sql
-UPDATE dim_ps5_games d
-SET end_date = NOW(), is_active = FALSE
-FROM stg_ps5_games s
-WHERE d.game_id = s.game_id
-  AND d.is_active = TRUE
-  AND d.row_hash <> s.row_hash;
 
 ---
 
@@ -39,10 +26,9 @@ WHERE d.game_id = s.game_id
 
 **Staging Table (stg_ps5_games):**
 - Latest snapshot of incoming data  
-- Same attributes as dimension table (without SCD columns)
+- Same attributes as dimension table (without SCD columns)  
 
 ---
-
 
 ## 🔄 Flow Diagram (SCD-2 Logic)
 
