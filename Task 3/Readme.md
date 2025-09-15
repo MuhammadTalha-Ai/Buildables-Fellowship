@@ -26,7 +26,20 @@ Changes are detected using a **row-level hash (MD5)** across attributes.
 
 **Staging Table (stg_ps5_games):**
 - Latest snapshot of incoming data  
-- Same attributes as dimension table (without SCD columns)  
+- Same attributes as dimension table (without SCD columns)
+
+---
+
+## 🗂️ SCD-2 Logic in SQL (Simplified)
+
+### Expire old records when row_hash differs:
+```sql
+UPDATE dim_ps5_games d
+SET end_date = NOW(), is_active = FALSE
+FROM stg_ps5_games s
+WHERE d.game_id = s.game_id
+  AND d.is_active = TRUE
+  AND d.row_hash <> s.row_hash;
 
 ---
 
