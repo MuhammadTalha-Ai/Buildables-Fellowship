@@ -30,8 +30,8 @@ Changes are detected using a **row-level hash (MD5)** across attributes.
 
 ---
 
-## Wirte
-(https://github.com/MuhammadTalha-Ai/Buildables-Fellowship/blob/Task3/Task%203/Task3_wirteup.md)  
+## Wirte Up
+![Task3_wirteup](Task3/Task%203/Task3_wirteup.md) 
 
 ---
 
