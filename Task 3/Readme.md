@@ -40,3 +40,9 @@ flowchart LR
     C --> D[Unchanged → Do Nothing]
     C --> E[Changed → Expire Old Row<br>+ Insert New Row]
     C --> F[New Game → Insert New Row]
+
+---
+
+## 📊 Wirte Up
+(./Task3_wirteup.md)
+
