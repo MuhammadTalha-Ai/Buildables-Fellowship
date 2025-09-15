@@ -1,0 +1,3 @@
+We used a row hash (MD5) because it efficiently captures changes across multiple attributes (genre, developer, price, PS Plus inclusion). Instead of comparing each column individually, a single hash comparison tells us if any attribute changed. This reduces query complexity and improves performance for large datasets.
+
+If a lastUpdateDate column existed in both tables, a row hash might still be useful. lastUpdateDate only tells us when a row was updated, not what changed. If multiple attributes can change together, the row hash provides an easy way to detect changes at the attribute level. A hybrid approach is best: use lastUpdateDate to quickly filter candidates for change, and then validate with row hash.
