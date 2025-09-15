@@ -30,8 +30,8 @@ Changes are detected using a **row-level hash (MD5)** across attributes.
 
 ---
 
-## Wirte Up
-![Task3_wirteup](Task3_wirteup.md) 
+## 📖 Write Up
+See the full [Write Up](./Task3_writeup.md)
 
 ---
 
