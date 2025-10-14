@@ -8,7 +8,7 @@ from pathlib import Path
 # -------------------------------------------------------
 # CONFIGURATION
 # -------------------------------------------------------
-OUTPUT_DIR = Path("raw_events")       # Folder to store CSVs
+OUTPUT_DIR = Path("D:\Buildables-Fellowship\Task 4")       # Folder to store CSVs
 NUM_FILES = 5                         # How many CSV files to create
 ROWS_PER_FILE = 2_000_000             # Rows per CSV (~250–300 MB each)
 START_DATE = datetime(2025, 1, 1)     # Start of event timeline
